@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Me</title>
+    <title>Syed Arfan Hussain's Introductions Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,25 +14,36 @@
             overflow: hidden;
         }
         .main-info {
-            background: #333;
+            background: #800000;
             color: #fff;
             padding: 20px;
+            text-align: center;
         }
         .main-info h1 {
             margin: 0;
+        }
+        .contact {
+            margin: 20px 0;
+            background: #e7e7e7;
+            padding: 15px;
+            text-align: center;
         }
         .hobbies, .aus, .course, .job, .fun-fact {
             background: #e7e7e7;
             padding: 15px;
             margin-bottom: 10px;
         }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header class="main-info">
-            <h1>COE 420: Software Engineering - Getting To Know Each Other</h1>
-            <h1>Syed Arfan Hussain Personal Website</h1>
+            <h1>Syed Arfan Hussain's Introductions Website</h1>
         </header>
 
         <section class="aus">
@@ -43,7 +54,7 @@
         <section class="aus">
             <h2>Year at AUS:</h2>
             <p>Senior 2</p>
-            <h2>AUS major/minor/concentrations:</h2>
+            <h2>AUS Major/Minor/Concentrations:</h2>
             <p>Computer Engineering</p>
             <h2>Reasons for pursuing this degree:</h2>
             <p>I have always been very interested in building and developing and have always wanted to have my own company, especially in the field of robotics.</p>
@@ -71,13 +82,21 @@
             <p>I want to start my own YouTube channel and document all my trips. (Like the trip I went on this weekend, to Al Qua'a)</p>
         </section>
 
-        <p>Last Updated on <span id="last-updated"></span></p>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:b00092529@aus.edu">b00092529@aus.edum</a></p>
+            <p>Discord: @simplyarfan</p>
+        </section>
     </div>
+
+    <footer>
+        <p>Last Updated on <span id="last-updated"></span></p>
+    </footer>
 
     <script>
         const today = new Date();
-        const formattedDate = today.getDate().toString().padStart(2, '0') + '/' + 
-                              (today.getMonth() + 1).toString().padStart(2, '0') + '/' + 
+        const formattedDate = today.getDate().toString().padStart(2, '0') + '/' +
+                              (today.getMonth() + 1).toString().padStart(2, '0') + '/' +
                               today.getFullYear();
         document.getElementById("last-updated").textContent = formattedDate;
     </script>
