@@ -26,6 +26,13 @@
             padding: 15px;
             margin-bottom: 10px;
         }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -42,11 +49,11 @@
 
         <section class="aus">
 			<h2>Year at AUS:</h2>
-		<p>Senior 2</p>
+		    <p>Senior 2</p>
 			<h2>AUS major/minor/concentrations:</h2>
-		<p>Computer Engineering</p>
+		    <p>Computer Engineering</p>
 			<h2>Reasons for pursuing this degree:</h2>
-		<p>I have always been very interested in building and developing and have always wanted to have my own company, especially in the field of robotics.</p>
+		    <p>I have always been very interested in building and developing and have always wanted to have my own company, especially in the field of robotics.</p>
         </section>
 
 		<section class="course">
@@ -55,21 +62,31 @@
         </section>
 
 		<section class="job">
-		<h2>Current/Recent Job</h2>
-		<p>Residential Assistant at the Men's Residential Halls, Ecology Representative, Deputy Director of External Relations for AUSMUN.</p>
+		    <h2>Current/Recent Job</h2>
+		    <p>Residential Assistant at the Men's Residential Halls, Ecology Representative, Deputy Director of External Relations for AUSMUN.</p>
         </section>		
 
         <section class="hobbies">
             <h2>Hobbies and Special Interests</h2>
-	<p>1) I love playing video games; I have always been a hardcore gamer. 🎮</p>
-	<p>2) I am also an astrophile; An astrophile is a person who loves astronomy or constantly gazes at the stars. ⭐️</p>
-	<p>3) I am involved in a lot of things here at AUS, so you might run into me outside of this classroom as well. 🫶</p>
+		    <p>1) I love playing video games; I have always been a hardcore gamer. 🎮</p>
+		    <p>2) I am also an astrophile; An astrophile is a person who loves astronomy or constantly gazes at the stars. ⭐️</p>
+		    <p>3) I am involved in a lot of things here at AUS, so you might run into me outside of this classroom as well. 🫶</p>
         </section>
 
         <section class="fun-fact">
             <h2>Fun Fact</h2>
             <p>I want to start my own YouTube channel and document all my trips. (Like the trip I went on this weekend, to Al Qua'a)</p>
         </section>
+
+        <footer>
+            <p>Last Edited: <span id="last-edited"></span></p>
+        </footer>
     </div>
+
+    <script>
+        const lastEditedDate = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("last-edited").textContent = lastEditedDate.toLocaleDateString(undefined, options);
+    </script>
 </body>
 </html>
